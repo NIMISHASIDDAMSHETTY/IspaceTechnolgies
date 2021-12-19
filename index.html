@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Project</title>
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+    img{
+        height:1000px;
+    }
+    nav {
+      font-weight: bolder;
+    }
+
+    #one{
+        font-family:'Times New Roman', Times, serif;
+        font-size:30px;
+        color:white;
+        font-weight:bolder;
+    }
+    p{
+      color:black;
+    }
+    .color{   
+        color: mediumaquamarine;
+    }
+    p{
+        text-align: justify;
+    }
+    nav li a:hover{
+        background-color:lightskyblue;
+        border-radius: 5px 5px 5px 5px;
+
+    }
+    footer{
+        background-color:rgba(1, 1, 22, 0.911);
+       color: whitesmoke;
+    }
+
+    footer a[href]{
+      text-decoration: none;
+      color: white;
+    }
+    .list-inline-item .btn-floating {
+      font-size: 25px;
+      color:ghostwhite;
+    }
+
+    .dropdown li {
+      text-decoration: none;
+      width:max-content;
+      padding-left: 10px;
+      padding-right: 20px;
+      padding: 5px;
+    }
+    .dropdown li a[href]:hover{
+      color: #000;
+      text-decoration: none;
+      border-radius:30%;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 5px 5px 5px 5px;
+    }
+    .dropdown a[href]{
+      color: black;
+    }
+
+    .sm-text-center{
+      background: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091__340.jpg") no-repeat fixed center;
+      background-size: 100%;
+      margin:10px;
+      padding:25px;
+    }
+
+    .funfact .fa{
+      color:skyblue;
+      font-size: 40px;
+      margin-bottom:9px;
+    }
+
+    .funfact {
+      font-size: 35px;
+    }
+    .card-deck{
+      text-align: inherit;
+    }
+    nav {
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+  .services-page-2-details .fa {
+    color:white;
+    font-size: 46px;
+}
+.services-page-2-details:hover {
+    background: #68aee9;
+}
+.services-page-2-details h3 {
+    color: white;
+    font-size: 20px;
+    padding: 25px 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.services-page-2-details {
+    border: 1px solid #036177;
+    padding: 40px 40px 60px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 30px;
+    background-color: #036177;
+
+}
+.services-page-2-details p {
+  color: white;
+  text-align: inherit;
+}
+    
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light">
+      <a class="navbar-brand text-white" href="">
+        <img src=".././Greenlogo.JPG" style="height: 100px ;width:200px">
+
+      </a> 
+
+        <a class="navbar-toggler ml-auto bg-light" href="" data-target="#fact" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+        </a>
+
+    <div class="collapse navbar-collapse" id="fact">
+    <ul class="navbar-nav m-auto ">
+        <li class="nav-item m-auto active p-3 m-5">
+            <a class="nav-link text-dark " href="#" >Home </a>
+        </li>
+        <li class="nav-item m-auto p-2 m-5">
+            <a class="nav-link text-dark" href="About.html" >AboutUs </a>
+        </li>
+        <li class="nav-item m-auto p-2 m-3">
+              <div class="dropdown">
+                <p class="dropdown-toggle text-dark m-3" data-toggle="dropdown" >
+                Services </p>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li ><a href="web.html">Web Development </a></li>
+                <li ><a href="app.html">App Development </a></li>
+                <li ><a href="Digital.html">Digital Marketing</a></li>
+                <li><a href="ecommerce.html">Ecommerce</a></li>
+                <li><a href="cloud.html">Cloud Computing</a></li>
+                <li><a href="Datascience.html">Data Science</a></li>
+              </ul>
+            </div>
+          </p>
+        </li>
+        <li class="nav-item m-auto p-2 m-4">
+          <div class="dropdown">
+            <p class="dropdown-toggle text-dark m-3" data-toggle="dropdown" >
+            Industries </p>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li ><a href="banking.html">Banking </a></li>
+            <li ><a href="health.html">Health Care</a></li>
+            <li ><a href="telecom.html">Telecom</a></li>
+            <li><a href="finance.html">Finance Industry</a></li>
+            <li><a href="travel.html">Travel & Tourism</a></li>
+          </ul>
+        </div>
+      </p>
+    </li>
+    <li class="nav-item m-auto  p-2 m-5">
+      <div class="dropdown">
+        <p class="dropdown-toggle text-dark m-3" data-toggle="dropdown" >
+        Technologies</p>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li ><a href="sap.html">SAP Technology </a></li>
+        <li ><a href="buss.html">Business Intelligence</a></li>
+        <li ><a href="devops.html">Devops</a></li>
+        <li><a href="robotics.html">Robotics</a></li>
+        <li><a href="block.html">Block Chain</a></li>
+      </ul>
+    </div>
+  </p>
+
+  </li>
+  <li class="nav-item m-auto  p-2 m-5">
+  
+      <a class="nav-link text-dark" href="outsourcing.html">Outsourcing </a>
+  </li>
+        <li class="nav-item m-auto  p-2 m-5">
+            <a class="nav-link text-dark" href="contact_us.html">Contact Us </a>
+        </li>
+    </ul>
+    </div>
+    </nav>
+    <div>
+    </div>  
+
+    <div class="carousel slide" id="eleven" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../firstslide.jpeg" alt="no image" class= "d-block w-100" >
+            <div class="carousel-caption">
+               <p id="one" class="text-uppercase text-bolder"> Your one-stop solution for all software development needs!<p style="font-size:25px;margin-top:-10px;color:whitesmoke";> Crafting stunning digital solutions and services is not our work, it’s our duty. </p>
+               <a href="" class="btn btn-info" text-white >Request for Quote</a>        
+               <a href="" class="btn btn-info" text-white > Contact Us</a>        
+
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../2ndslide.jpeg" class="d-block w-100">
+                <div class="carousel-caption">
+                    <p id="one" class="text-uppercase"> We offer customized solutions tailored specifically to each client's needs, so you can be sure that we'll be able to provide what you want in a timely fashion. </p>
+                    <a href="" class="btn btn-info" text-white >Request for Quote</a>        
+                    <a href="" class="btn btn-info" text-white > Contact Us</a>        
+                      </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../3rdslide.jpeg"  class="d-block w-100" >
+                <div class="carousel-caption">
+                    <p id="one" class="text-uppercase"> Our goal is to build your company into a world-leading enterprise by providing the best in technology, software, and innovation. </p>
+                    <a href="" class="btn btn-info" text-white >Request for Quote</a>        
+                    <a href="" class="btn btn-info" text-white > Contact Us</a>        
+                      </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#eleven" role="button" data-slide="prev">
+            <span  class="carousel-control-prev-icon" aria-hidden="true"> </span>
+            <span class="sr-only">Next</span>
+
+            </a>
+            <a class="carousel-control-next" href="#eleven" role="button" data-slide="next">
+                <span  class="carousel-control-next-icon" aria-hidden="true"> </span>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+
+
+            <br>
+            <br>
+
+        <div class="container">
+            <h1 align="center">  Welcome to <span class="text-info">Ispace Technologies</span> </h1><br>
+            <p style="font-size:18px;color: black;">
+              A great service provider with data-driven solutions help wide range of clients around the world and perform more effectively to achieve better outcomes.We  provides the best in quality and gain trusted feedback from clients. We always prefer to do on time delivery services to clients.We provide the quality products for affordable cost.It is the process of improving the quality and quantity of website traffic to a web page from search engines. We do SEO optimization strategy from scratch.
+            </p>
+            </div>
+      
+
+        <div class="container">
+            <h1 align="center"> About <span class="text-info" >Us</span> </h1><br>
+            <p style="font-size:18px;color: black;">
+              We are a leading software development company that offers full range of software development services. Respond immediately with the changing needs of clients. Satisfied clients around the globe, bear testimony to the quality of our work. We’re probably the friendliest business you’ve ever come across.want to know about us.</p>
+            <a href="">
+              <center>
+              <p class="btn btn-info text-white">Read more</p></center>
+
+              </a>  
+            </div>
+
+    
+
+        <div calss="container">
+          <div class="carousel-inner">
+
+          <img src="https://image.freepik.com/free-photo/business-people-casual-meeting_53876-101882.jpg" alt="no image" class= "d-block w-100 " style="height: 500px;" >
+          <div class="carousel-caption">
+             <p style="font-weight: bolder;font-size:35px;color:mintcream;">WE ARE A SOFTWARE COMPANY AND WE LOVE SOLVING BUSINESS PROBLEMS !  </p>
+            </div>
+        </div>
+   
+
+<div class="container mt-4">
+    <h1 align="center"> Our <span class="text-info">Services </span> </h1><br>
+    <p style ="font-size:20px;"> We can offer your company a full range of services from inspection and audit through to testing and analysis and certification.
+    </p>
+</div>
+
+
+<!--1 container-->
+<div class="container mt-4">
+    <div class="row">
+      <div class="card-deck mx-auto">
+        <div class="col mx-auto">
+  <div class="card shadow bg-white rounded" style="width:18rem;">
+    <a href="web.html">
+      <img src="https://media.istockphoto.com/photos/professional-web-design-and-website-development-service-picture-id1150242042?k=20&m=1150242042&s=612x612&w=0&h=MQWKxDGFLn7Klrxf5tfsZlao_TEwD6fzaogsh8kra8s=" alt="" class="card-img-top" style="height:200px;">
+  </a>  
+      <div class="card-body">
+          <p class="card-text">We believe that website is the first impression for any business. We help you differentiate among others by creating tempting designs, which gives more potential customers, resulting in increased profitability and satisfaction for clients.          </p>
+          <a href="" class="btn btn-info text-white text-center" >Read more</a>        
+
+        </div>  
+      </div>
+      </div>
+      </div>
+      <div class="card-deck mx-auto">
+        <div class="col mx-auto">
+  <div class="card shadow bg-white rounded" style="width:18rem;">
+    <a href="app.html">
+    <img src="https://media.istockphoto.com/photos/software-developer-freelancer-working-at-home-picture-id1174690086?k=20&m=1174690086&s=612x612&w=0&h=J3pwsQggjuChJQYZb6vVY_RMpWG1Yz8Qm7xPChrssT8=" alt=""  class="card-img-top" style="height:200px;">
+    </a>
+    <div class="card-body">
+        <p class="card-text">We focus on creating best applications for clients using advanced technologies. We have expert team to handle critical situations easily. Provide high quality,affordable contract security solution and delivery best possible outcomes. 
+        </p>
+        <a href="" class="btn btn-info text-white text-center" >Read more</a>        
+</div>  
+</div>
+</div>
+ </div>
+<div class="card-deck mx-auto">
+<div class="col mx-auto">
+    <div class="card shadow bg-white rounded" style="width:18rem;">
+      <a href="Digital.html">
+        <img src="https://media.istockphoto.com/photos/digital-marketing-word-on-blackboard-with-supportive-icons-picture-id935427102?k=20&m=935427102&s=612x612&w=0&h=rp_1-hNvE-5v5p9RCz5BZKpUlGD8ptfwVKBGheuPNA0=" alt=""  class="card-img-top" style="height:220px;">
+        </a>
+        <div class="card-body">
+            <p class="card-text">Digital Marketing is the crucial part of online marketing strategies to promote product or service of any business globally. We help business owners to grow digitally by choosing different strategies from organic to paid ways.
+        </p>
+        <a href="" class="btn btn-info text-white text-center" >Read more</a>        
+
+        </div>  
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!--2container-->
+<div class="container mt-3">
+    <div class="row">
+  <div class="card-deck mx-auto">
+<div class="col mx-auto">
+  <div class="card shadow bg-white rounded " style="width:18rem;">
+    <a href="health.html">
+  <img src="https://image.freepik.com/free-photo/coworkers-having-work-meeting_23-2148985463.jpg " alt="" class="card-img-top bg-light" style="height:200px;">
+  </a>
+  <div class="card-body">
+      <p class="card-text">We directed towards IT initiatives that companies wish to take up in the quest to sustain and grow the business.From start to end,we continuously provide dedicated efforts to transform your project objectives into a benchmark of success.
+      </p>
+      <a href="" class="btn btn-info text-white text-center" >Read more</a>        
+
+  </div>  
+  </div>
+  </div>
+  </div>
+<div class="card-deck mx-auto">
+<div class="col mx-auto">
+<div class="card shadow bg-white rounded" style="width:18rem;">
+  <a href="cloud.html">
+<img src="https://cdn.pixabay.com/photo/2021/11/25/05/20/cloud-storage-6822673__340.png" alt=""  class="card-img-top bg-light" style="height:200px;">
+</a>
+<div class="card-body">
+    <p class="card-text">We deliver stand-alone and integrated testing services to various customers from software product startups to larger corporations, providing supreme quality assurance through a deep understanding of your business goals and applications.
+    </p>
+    <a href="" class="btn btn-info text-white text-center" >Read more</a>        
+
+</div>  
+</div>
+</div>
+</div>
+<div class="card-deck mx-auto">
+<div class="col mx-auto">
+<div class="card shadow bg-white rounded" style="width:18rem;">
+  <a href="Datascience.html">
+    <img src="https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372__340.jpg" alt=""  class="card-img-top" style="height:220px;">
+   </a>
+    <div class="card-body">
+        <p class="card-text">Data Science is a method in which it uses scientific methods to appraoch a data with algorithms to get information from structured and unstrutured Data.The name itself has apower to explore the world with beautiful innovations.
+        </p>
+        <a href="" class="btn btn-info text-white text-center" >Read more</a>        
+
+    </div>  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jumbotron m-4">
+<div style="background: whitesmoke;" ><br>
+<h4 class="alert-heading text-center">That's Great ! </h4><h5>
+<p style="text-align:center;">Grow your business with our user friendly IT solutions.</h5></p>
+<p class="text-center"> <button class="btn btn-info">Get Quote </button></p><br>
+</div>
+</div>
+
+
+<div class="col-md-12 sm-text-center">
+  <h3 class="text-white mt-30 mb-0 text-center">Your quest for the perfect offshore remote team ends here</h3>
+  <h2 class="text-info font-48 mt-0 text-center">Passion for Technology &amp; Customer Success</h2>
+  <div class="row mt-30 sm-text-center">
+    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+      <div class="funfact text-center">
+        <i class="fa fa-industry" aria-hidden="true"></i>
+        <h2 data-animation-duration="1000" data-value="15" class="animate-number text-white font-88 font-weight-400 mt-0 mb-15 appeared">15</h2>
+        <h5 class="text-white text-uppercase">Years of Experience</h5>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+      <div class="funfact text-center">
+        <i class="fa fa-book font-88" aria-hidden="true"></i>
+        <h2 data-animation-duration="2000" data-value="25" class="animate-number text-white font-38 font-weight-400 mt-0 mb-15 appeared">25</h2>
+        <h5 class="text-white text-uppercase">Technology Stacks Covered</h5>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+      <div class="funfact text-center">
+        <i class="fa fa-users" aria-hidden="true"></i>
+        <h2 data-animation-duration="2000" data-value="50" class="animate-number text-white font-38 font-weight-400 mt-0 mb-15 appeared">50</h2>
+        <h5 class="text-white text-uppercase">Products, Apps and Solutions Delivered</h5>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+      <div class="funfact text-center">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+
+      <h2 data-animation-duration="2000" data-value="100" class="animate-number text-white font-28 font-weight-400 mt-0 mb-15 appeared">100</h2>
+        <h5 class="text-white text-uppercase ">Client Satisfaction Rate</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="jumbotron m-4">
+  <div style="background: whitesmoke;" ><br>
+  <h5 class="alert-heading text-center text-uppercase">Exciting to know about us </h5>
+  <p style="text-align:center;">
+    <div class="text-center text-md-center">
+      <ul class="list-unstyled list-inline">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-sm rgba-white-slight mx-1 text-info">
+            <i class="fa fa-facebook text-center" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-sm rgba-white-slight mx-1 text-info">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-sm rgba-white-slight mx-1 text-info">
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-sm rgba-white-slight mx-1 text-info">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  
+  </p>
+  <p class="text-center"> <button class="btn btn-info">Get Quote </button></p><br>
+  </div>
+  </div>
+  
+
+<div class="container mt-3">
+  <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <div class="services-page-2-details">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <h3>E-Commerce</h3>
+            <p>E-commerce is the buying and selling of goods and services, or the transmitting of funds or data over an electronic Products.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <div class="services-page-2-details">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <h3>SAP Technology</h3>
+            <p>Technology advancements are compelling businesses to focus on creating an SAP based applications for business.</p>          </div>
+        </div>
+  
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+      <div class="services-page-2-details">
+        <i class="fa fa-users" aria-hidden="true"></i>
+        <h3>It Consulting</h3>
+        <p>IT consulting services are advisory services that help clients to access different technologies and in doing so, align their technology.</p>
+      </div>
+    </div>
+</div>
+</div>
+<!--2nd container-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+      <div class="services-page-2-details">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <h3>Robotics</h3>
+        <p>Robotics involves design, construction, operation, and use of robots. It is an interdisciplinary branch of computer engineering. </p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+      <div class="services-page-2-details">
+        <i class="fa fa-users" aria-hidden="true"></i>
+        <h3>ERP Implementation</h3>
+        <p>Companies are increasingly implementing Enterprise Resource Planning (ERP) software solutions to improve operations.</p>      </div>
+    </div>
+
+<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+  <div class="services-page-2-details">
+    <i class="fa fa-users" aria-hidden="true"></i>
+    <h3>24/7 Support</h3>
+    <p>Great Support from the support team of Ispace Techologies Team. Quick response from the Ispace Techologies Team.</p>  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer  >
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"><br>
+        <h4 style="font-family: monospace;color: white;">Ispace Technologies</h4>
+        <p style="color:ghostwhite;">Ispace Technology Pvt Ltd provides a complete solution for the technology needed for clients with time bound development process.</p>
+      </div>
+      <!-- Grid column -->
+
+      <!--hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" >
+          <h3 style="font-family:monospace;color:white;">Services</h3><br>
+
+        <p>
+          <a href="web.html">Web Development</a>
+        </p>
+        <p>
+          <a href="app.html">App Development</a>
+        </p>
+        <p>
+          <a href="Digital.html">Digital Marketing</a>
+        </p>
+        <p>
+          <a href="ecommerce.html">Ecommerce</a>
+        </p>
+        <p>
+          <a href="cloud.html">Cloud Computing</a>
+        </p>
+        <p>
+          <a href="Datascience.html">Data Science</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!--hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h4 style="font-family:monospace;color:white;">DiscoverUs</h4><br>
+          <p>
+          <a href="home.html">Home</a>
+        </p>
+        <p>
+          <a href="About.html">About us</a>
+        </p>
+        <p>
+          <a href="app.html">Services</a>
+        </p>
+        <p><a href="health.html">Industries</a>
+        </p>
+<p>
+  <a href="sap.html">Technologiess</a>
+</p>
+<p>
+  <a href="outsourcing.html">Outsourcing</a></p>
+
+        <p>
+          <a href="contact_us.html">Contact Us</a>
+        </p>
+      </div>
+
+      <!-- Grid column -->
+      <!--hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h4 style="font-family:monospace;color:white;">Contact Us</h4><br>
+        <p>
+        <a style="color: white;">
+          <i class="fa fa-home mr-3" aria-hidden="true"></i>  Hyderabad</a></p>
+         <p>
+          <a style="color: white;">
+          <i class="fa fa-envelope mr-3" aria-hidden="true"></i> infoispace@gmail.com</a>
+         </p> 
+         <p>
+          <a style="color: white;">
+          <i class="fa fa-phone mr-3" aria-hidden="true"></i> 9989789654</a></p><p>
+          <a style="color: white;">
+    
+          <i class="fa fa-location-arrow mr-3" aria-hidden="true"></i> plot num, street
+      </a></p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+  
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left text-dark">© 2020 Copyright:
+          <a href="http://www.ispacetechs.com/">
+            <strong>http://www.ispacetechs.com/</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+    
+</body>
+</html>
