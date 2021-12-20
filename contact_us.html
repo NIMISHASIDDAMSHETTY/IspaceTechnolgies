@@ -18,12 +18,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-     #one{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
-        color:royalblue
-    }
-     li a:hover{
+
+  nav  li a:hover{
         background-color:lightskyblue;
         border-radius: 5px 5px 5px 5px;
 
@@ -32,8 +28,29 @@
 .jumbotron{
     margin-top: 80px;
     margin-bottom: 80px;
-    background-color:lightblue;
 }
+.pt-60 {
+    padding-top: 60px !important;
+}
+.pb-60{
+  padding-bottom: 60px;
+}
+.text-theme-colored2 {
+    color: #056d8f !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+.contact-info  .fa {
+  font-size:50px;
+}
+
+.container p {
+  font-size:18px;
+  color: black;
+}
+
 h3{
     margin-bottom: 30px;
 }
@@ -86,7 +103,21 @@ textarea{
         background-image: url("../allslide.jpeg");
         color: white;
     }
-
+    .bg-silver-light {
+    background-color: #F3F3F5 !important;
+    
+}
+.border-1px {
+    border: 1px solid #eeeeee !important;
+}
+.text-center {
+    text-align: center;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 
 </style>
@@ -121,6 +152,10 @@ textarea{
             <li><a href="ecommerce.html">Ecommerce</a></li>
             <li><a href="cloud.html">Cloud Computing</a></li>
             <li><a href="Datascience.html">Data Science</a></li>
+            <li><a href="elearning.html">E-learning</a></li>
+            <li><a href="energy.html">Energy</a></li>
+            <li><a href="erpimp.html">ERP Implementation</a></li>
+
             </ul>
         </li>
         <li class="nav-item m-auto p-2 m-5">
@@ -133,6 +168,10 @@ textarea{
             <li ><a href="telecom.html">Telecom</a></li>
             <li><a href="finance.html">Finance Industry</a></li>
             <li><a href="travel.html">Travel & Tourism</a></li>
+            <li><a href="retail.html">Retail</a></li>
+            <li><a href="foodorder.html"></a>Food Order</li>
+            <li><a href="govt.html">Government</a></li>
+
           </ul>
         </div>
       </p>
@@ -147,6 +186,10 @@ textarea{
           <li ><a href="devops.html">Devops</a></li>
           <li><a href="robotics.html">Robotics</a></li>
           <li><a href="block.html">Block Chain</a></li>
+          <li><a href="AI.html">Artifical Intelligence</a></li>
+          <li><a href="salesforce.html"></a>Salesforce</li>
+          <li><a href="testing.html">Software Testing</a></li>
+  
         </ul>
       </div>
     </p>
@@ -176,7 +219,7 @@ textarea{
       <div class="jumbotron">
 
     <form action = "mailto:infoispace@gmail.com" method="post" enctype="text">
-        <h3 class="text-center ">Drop Us a Message</h3>
+        <h3 class="text-center text-info">Drop Us a Message</h3>
        <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -189,7 +232,7 @@ textarea{
                     <input type="text" name="t3" class="form-control" placeholder="Your Phone Number *" value="" >
                 </div>
                 <div class="form-group ">
-                    <input type="submit" name="btnSubmit" class="btn btn-primary" value="Send Message" >
+                    <input type="submit" name="btnSubmit" class="btn btn-info" value="Send Message" >
                 </div>
             </div>
             <div class="col-md-6">
@@ -199,6 +242,49 @@ textarea{
             </div>  
         </div>
     </form>
+</div>
+
+
+<div class="container pt-60 pb-60">
+  <div class="section-title mb-60">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="esc-heading small-border text-center">
+          <h3>Hate Filling out Forms?</h3><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-60">
+    <div class="col-sm-12 col-md-3">
+      <div class="contact-info text-center bg-silver-light border-1px pt-60 pb-60">
+        <i class="fa fa-phone font-36 mb-10 text-theme-colored2"></i>
+        <h4>Call Us</h4>
+        <h6 class="text-gray">Phone: +91-44-71647886</h6>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div class="contact-info text-center bg-silver-light border-1px pt-60 pb-60">
+        <i class="fa fa-map-marker font-36 mb-10 text-theme-colored2"></i>
+        <h4>Ispace Tech</h4>
+     
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div class="contact-info text-center bg-silver-light border-1px pt-60 pb-60">
+        <i class="fa fa-envelope font-36 mb-10 text-theme-colored2"></i>
+        <h4>Email</h4>
+        <h6 class="text-gray">info@ispace.com</h6>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div class="contact-info text-center bg-silver-light border-1px pt-60 pb-60">
+        <i class="fa fa-fax font-36 mb-10 text-theme-colored2"></i>
+        <h4></h4>
+        <h6 class="text-gray"></h6>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Footer -->
@@ -249,7 +335,7 @@ textarea{
   
         <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h4 style="font-family:monospace;color:white;"> Useful Links </h4><br>
+            <h4 style="font-family:monospace;color:white;">DiscoverUs</h4><br>
             <p>
             <a href="index.html">Home</a>
           </p>
@@ -282,12 +368,15 @@ textarea{
           <h4 style="font-family:monospace;color:white;">Contact Us</h4><br>
           <p>
           <a style="color: white;">
-            <i class="fa fa-home mr-3" aria-hidden="true"></i>  Hyderabad</p>
-          <p>
-            <i class="fa fa-envelope mr-3" aria-hidden="true"></i> infoispace@gmail.com</p>
-          <p>
-            <i class="fa fa-phone mr-3" aria-hidden="true"></i> 9989789654</p>
-          <p>
+            <i class="fa fa-home mr-3" aria-hidden="true"></i>  Hyderabad</p></a>
+            <a style="color: white;">
+              <p>
+            <i class="fa fa-envelope mr-3" aria-hidden="true"></i> infoispace@gmail.com</a>
+            <a style="color: white;">
+              <p>
+            <i class="fa fa-phone mr-3" aria-hidden="true"></i> 9989789654</a>
+            <a style="color: white;">
+              <p>
             <i class="fa fa-location-arrow mr-3" aria-hidden="true"></i> plot num, street
         </a>
         </div>
