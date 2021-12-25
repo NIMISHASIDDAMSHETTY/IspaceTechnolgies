@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about us</title>
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,6 +16,8 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 <style>
       nav li a:hover{
         background-color:lightskyblue;
@@ -26,7 +27,7 @@
     nav {
       font-weight: bolder;
     }
-  p{
+  p{ 
         color:black;      
     }
     h4{
@@ -92,6 +93,17 @@
       font-size:30px;
       margin-bottom: 20px;
     }
+
+    @media screen and (max-width:995px){
+     .jumbotron .img-responsive img{
+       display: inline;
+       max-width: 100%;
+
+    }
+
+  
+  }
+
     
 </style>
 </head>
@@ -191,17 +203,17 @@
           <div class="container bg-light">
 
             <div class="row">
-                <div class="col">
+                <div class="col ">
                     <h4>Our Team</h4>
                     <p> We have certified team with top rated software development services due to our vast experience, team of skilled professionals and a dedicated working process our team can handle clients requirements effectively.                    </p> 
                     </div>
-                    <div class="col">
+                    <div class="col-lg col-sm mx-auto img-responsive">
                     <img src="https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261__340.jpg"  class="rounded" width="360px" height="200px">
                        </div>              
                     </div>  
                     <hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-lg col-sm mx-auto  img-responsive">
                             <img src="https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241__340.jpg" class="rounded" width="360px" height="200px">
                         </div>
                             <div class="col">
@@ -218,7 +230,7 @@
                                  <p>   
                                   Our work crosses the boundaries of IT solutions and services from small business to large business. We are obsessed with improving measurable business results for B2B companies.                                 </p>
                              </div>
-                             <div class="col">
+                             <div class="col-lg col-sm-2 col-md  mx-auto img-responsive">
                                 <img src="https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340__340.jpg" class="rounded" width="360px" height="200px">
                             </div>
                          </div>
@@ -400,7 +412,7 @@
         <!--hr class="w-100 clearfix d-md-none">
   
         <!-- Grid column -->
-        <div class="col mx-auto mt-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
           <h4 style="font-family:cursive;color:white;font-weight: bolder;">Contact Us</h4><br>
           <p>
           <a style="color: white;">
@@ -412,7 +424,7 @@
           <p></a>
             <a style="color: white;">
 
-            <i class="fa fa-phone mr-3" aria-hidden="true"></i> 9989789654</p>
+            <i class="fa fa-phone mr-3" aria-hidden="true"></i>1234567890</p>
           <p>
             <i class="fa fa-location-arrow mr-3" aria-hidden="true"></i> plot num, street
         </a>

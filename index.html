@@ -19,7 +19,6 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    
   .carousel-inner img{
       object-fit: cover;
       height: 1000px;
@@ -47,6 +46,9 @@
         background-color:lightskyblue;
         border-radius: 5px 5px 5px 5px;
 
+    }
+    div{
+      display: block;
     }
     footer{
         background-color:rgba(1, 1, 22, 0.911);
@@ -92,9 +94,10 @@
     }
 
     .sm-text-center{
-      background: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091__340.jpg") no-repeat fixed center;
-      background-size: 100%;
+      background: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091__340.jpg") no-repeat fixed  center;
       margin:10px;
+      background-size: 100%;
+      height: 100%;
       padding:25px;
     }
 
@@ -159,6 +162,47 @@
         border:none;
         border-radius: 50%;
     }
+  @media only screen and (max-width:995px){
+    .carousel-caption #one {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width:995px){
+    .carousel-caption .btn {
+      padding: 0;      
+    }
+  }
+  @media only screen and (max-width:995px){
+    .sm-text-center {
+      text-align: center !important;
+      display:block;
+      background:url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091__340.jpg") no-repeat fixed center;
+      background-size: 100%;
+       height: 100%;
+      
+}
+  }
+  @media only screen and (max-width:995px){
+    .jumbotron .indicate{
+      display: inline;
+      max-width:100%;
+    }
+  }
+
+  @media screen and (max-width:995px){
+     .jumbotron .img-responsive {
+       display: inline;
+       max-width: 100%;
+    }
+  }
+  @media only screen and (max-width:995px){
+    .carousel img{
+      display: inline;
+      margin:auto;
+
+      max-width:100% auto;
+    }
+  }
 
 </style>
 </head>
@@ -246,34 +290,35 @@
     </ul>
     </div>
     </nav>
-    <div>
-    </div>  
 
     <div class="carousel slide" id="eleven" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="firstslide.jpeg" alt="no image" class= "d-block w-100" >
+                <img src="firstslide.jpeg" alt="no image" class= " img-responsive d-block w-100 m-auto" >
             <div class="carousel-caption">
-               <p id="one" class="text-uppercase text-dark text-bolder text-md-left "> Your one-stop solution for all software development needs!</p><p style="font-size:25px;margin-top:-10px;color:whitesmoke";> Crafting stunning digital solutions and services is not our work, it’s our duty. </p>
-               <a href="" class="btn btn-info text-white" >Request for Quote</a>        
-               <a href="" class="btn btn-info text-white "> Contact Us</a>        
+               <p id="one" class="text-uppercase text-dark text-bolder text-md-left "> Your one-stop solution for all software development needs!</p>
+               <p id="three" style="font-size:25px;margin-top:-10px;color:whitesmoke;"> Crafting stunning digital solutions and services is not our work, it’s our duty. </p>
+               <a href="" class="btn btn-info text-white m-auto" >Request for Quote</a>        
+               <a href="" class="btn btn-info text-white m-auto "> Contact Us</a>        
 
             </div>
             </div>
             <div class="carousel-item">
                 <img src="2ndslide.jpeg" class="d-block w-100">
                 <div class="carousel-caption">
-                    <p id="one" class="text-uppercase  text-bold text-dark " > We offer customized solutions tailored specifically to each client's needs.</p><p style="font-size:25px;margin-top:-10px;color:whitesmoke";>So you can be sure that we'll be able to provide what you want in a timely fashion. </p>
-                    <a href="" class="btn btn-info text-white"  >Request for Quote</a>        
-                    <a href="" class="btn btn-info text-white" > Contact Us</a>        
+                    <p id="one" class="text-uppercase  text-bold text-dark " > We offer customized solutions tailored specifically to each client's needs.</p>
+                    <p style="font-size:25px;margin-top:-10px;color:whitesmoke;">So you can be sure that we'll be able to provide what you want in a timely fashion. </p>
+                    <a href="" class="btn btn-info text-white m-auto"  >Request for Quote</a>        
+                    <a href="" class="btn btn-info text-white m-auto" > Contact Us</a>        
                       </div>
             </div>
             <div class="carousel-item">
                 <img src="3rdslide.jpeg"  class="d-block w-100" >
                 <div class="carousel-caption">
-                    <p id="one" class="text-uppercase text-dark text-bold "> Our goal is to build your company into a world-leading enterprise.</p><p style="font-size:25px;margin-top:-10px;color:whitesmoke";>By providing the best in technology, software, and innovation. </p>
-                    <a href="" class="btn btn-info" text-white >Request for Quote</a>        
-                    <a href="" class="btn btn-info" text-white > Contact Us</a>        
+                    <p id="one" class="text-uppercase text-dark text-bold "> Our goal is to build your company into a world-leading enterprise.</p>
+                    <p style="font-size:25px;margin-top:-10px;color:whitesmoke;"> By providing the best in technology, software, and innovation. </p>
+                    <a href="" class="btn btn-info text-white m-auto" >Request for Quote</a>        
+                    <a href="" class="btn btn-info text-white m-auto" > Contact Us</a>        
                       </div>
             </div>
         </div>
@@ -285,8 +330,10 @@
             <a class="carousel-control-next" href="#eleven" role="button" data-slide="next">
                 <span  class="carousel-control-next-icon" aria-hidden="true"> </span>
                 <span class="sr-only">Next</span>
-            </a>
+                </a>
+        
             </div>
+    
 
 
             <br>
@@ -309,10 +356,10 @@
               </a>  
             </div>
 
-<div class="container bg-light" >
-    <div class="jumbotron bg-light">
+            <div class="container">
+            <div class="jumbotron bg-light">
         <div class="row">
-            <div class="col">
+            <div class="col-lg m-auto">
               <center>
               <i class="fa fa-desktop icon text-center" aria-hidden="true"></i></center>
 
@@ -326,13 +373,16 @@
                   <p>We create a zeal in loving our services we offer you a wide range of services as per the market standards </p>
                   <a class="text-info" href="About.html">Readmore >> </a>
                 </div>  
-                   <div class="col ml-5 pl-5">
-                <img src="middle.jpeg"  class="rounded mt-5" width="400px" height="250px"  >
+
+                   <div class="col-lg col-xl col-md ml-auto ml-5 pl-5">
+                <img src="middle.jpeg"  class=" indicate rounded   mt-5" style="width:350px ;height: 250px;" >
                    </div>              
                 </div>  
+                </div>
 
-</div>  
+                
 </div>
+
 <div class="container mt-4">
     <h1 align="center"> Our <span class="text-info">Services </span> </h1><br>
     <p style ="font-size:20px;"> We can offer your company a full range of services from inspection and audit through to testing and analysis and certification.
@@ -374,7 +424,7 @@
 <div class="card-deck mx-auto">
 <div class="col mx-auto">
     <div class="card shadow bg-white rounded" style="width:18rem;">
-      <a href="Digital.html">
+      <a href="digital.html">
         <img src="https://media.istockphoto.com/photos/digital-marketing-word-on-blackboard-with-supportive-icons-picture-id935427102?k=20&m=935427102&s=612x612&w=0&h=rp_1-hNvE-5v5p9RCz5BZKpUlGD8ptfwVKBGheuPNA0=" alt=""  class="card-img-top" style="height:220px;">
         </a>
         <div class="card-body">
@@ -448,11 +498,14 @@
 </div>
 </div>
 
+<div class="container-fluid">
+  <section id="reservation" class="parallax layer-overlay overlay-theme-colored-9" data-bg-img="" data-parallax-ratio="0.4" style="background-image: url(&quot;https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091__340.jpg&quot;); background-position:100%;">
 
-<div class="col-md-12 sm-text-center">
+    <div class="row m-auto">
+<div class="col-md-12 m-auto sm-text-center">
   <h3 class="text-white mt-30 mb-0 text-center">Your quest for the perfect offshore remote team ends here</h3>
   <h2 class="text-info font-48 mt-0 text-center">Passion for Technology &amp; Customer Success</h2>
-  <div class="row mt-30 sm-text-center">
+  <div class="row m-auto mt-30 sm-text-center">
     <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
       <div class="funfact text-center">
         <i class="fa fa-industry" aria-hidden="true"></i>
@@ -460,21 +513,21 @@
         <h5 class="text-white text-uppercase">Years of Experience</h5>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50 m-auto">
       <div class="funfact text-center">
         <i class="fa fa-book font-88" aria-hidden="true"></i>
         <h2 data-animation-duration="2000" data-value="25" class="animate-number text-white font-38 font-weight-400 mt-0 mb-15 appeared">25</h2>
         <h5 class="text-white text-uppercase">Technology Stacks Covered</h5>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50 m-auto">
       <div class="funfact text-center">
         <i class="fa fa-users" aria-hidden="true"></i>
         <h2 data-animation-duration="2000" data-value="50" class="animate-number text-white font-38 font-weight-400 mt-0 mb-15 appeared">50</h2>
         <h5 class="text-white text-uppercase">Products, Apps and Solutions Delivered</h5>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+    <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50 m-auto">
       <div class="funfact text-center">
         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
 
@@ -484,8 +537,9 @@
     </div>
   </div>
 </div>
-
-
+</div>
+</section>
+</div>
 
 <div class="jumbotron m-4">
   <div style="background: whitesmoke;" ><br>
@@ -636,7 +690,7 @@
         <p><a href="health.html">Industries</a>
         </p>
 <p>
-  <a href="sap.html">Technologiess</a>
+  <a href="sap.html">Technologies</a>
 </p>
 <p>
   <a href="outsourcing.html">Outsourcing</a></p>
@@ -661,7 +715,7 @@
          </p> 
          <p>
           <a style="color: white;">
-          <i class="fa fa-phone mr-3" aria-hidden="true"></i> 9989789654</a></p><p>
+          <i class="fa fa-phone mr-3" aria-hidden="true"></i>1234567890</a></p><p>
           <a style="color: white;">
     
           <i class="fa fa-location-arrow mr-3" aria-hidden="true"></i> plot num, street
